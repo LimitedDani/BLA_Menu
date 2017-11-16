@@ -12,6 +12,26 @@ $maxwith: 1041px;
     font-family: FontAwesome;  
     content: "\f022";
 }
+.icon-refresh:before {
+    font-family: FontAwesome;      
+    content: "\f021";
+}
+.icon-time:before {
+    font-family: FontAwesome;      
+    content: "\f017";
+}
+.icon-food:before {
+    font-family: FontAwesome;      
+    content: "\f0f5";
+}
+.icon-bullseye:before {
+    font-family: FontAwesome;      
+    content: "\f140";
+}
+.icon-refresh:before {
+    font-family: FontAwesome;      
+    content: "\f021";
+}
 html, body {
     margin: 0 auto;
     height: 100%;
@@ -22,8 +42,7 @@ html, body {
 .sidebar {
     grid-area: sidebar;
     background: white;
-    color: black;
-    grid-    
+    color: black;  
     &-button {
         background-color: #f8a230;
         color: #fff;
@@ -39,6 +58,11 @@ html, body {
         white-space: nowrap;
         border: none;
         width: auto;
+    }
+    &-see {
+        font-size: 13px;
+        text-decoration: none;
+        color: #f8a230;
     }
     h3 {
         color: #000;
@@ -89,6 +113,28 @@ html, body {
         margin: 0;
         margin-top: 4px;
     }
+    &-gray-button {
+        background-color: #cccccc !important;
+        width: 200px;
+        font-family: "oswald",arial,sans-serif;
+        font-size: 100%;
+        text-transform: uppercase;
+        text-decoration: none;
+        border-radius: 4px;
+        color: #fff;
+        font-family: "oswald",arial,sans-serif;
+        font-size: 15px;
+        padding: 0.5em 1em 0.5em 1em;
+        text-transform: uppercase;
+        cursor: pointer;
+        display: inline-block;
+        line-height: normal;
+        text-align: center;
+        vertical-align: baseline;
+        white-space: nowrap;
+        border: none;
+        width: 80px;
+    }
     &-save-button {
         background-color: #f8a230 !important;
         width: 200px;
@@ -121,6 +167,33 @@ html, body {
         position: relative;
         border-top: 3px dashed #f8a230;
         clear: both;
+    }
+    &-instructions {
+        top: 12px;
+        position: relative;
+        border-top: 3px dashed #f8a230;
+        clear: both;
+    }
+    &-info {
+        list-style-type: none;
+    }
+    
+    &-info li {
+        display: inline-block;
+        list-style: none outside none;
+        text-align: left;
+        width: 100px;
+    }
+    &-info li &-info-item li {
+        display: block;
+        font-size: 10px;
+    }
+    &-info-icon {
+        position: relative;
+        top: 30px;
+        right: 30px;
+        font-size: 30px;
+        color: #cccccc;
     }
     &-title-instructions {
         color: #000;

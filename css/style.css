@@ -1,317 +1,318 @@
 @font-face {
   font-family: "FontAwesome";
   font-style: normal;
-  src: url("font/fontawesome-webfont.woff") format("woff");
-}
-
+  src: url("font/fontawesome-webfont.woff") format("woff"); }
 .icon-shopping-cart:before {
   font-family: FontAwesome;
-  content: "\f07a";
-}
+  content: "\f07a"; }
 
 .icon-list:before {
   font-family: FontAwesome;
-  content: "\f022";
-}
+  content: "\f022"; }
+
+.icon-refresh:before {
+  font-family: FontAwesome;
+  content: "\f021"; }
+
+.icon-time:before {
+  font-family: FontAwesome;
+  content: "\f017"; }
+
+.icon-food:before {
+  font-family: FontAwesome;
+  content: "\f0f5"; }
+
+.icon-bullseye:before {
+  font-family: FontAwesome;
+  content: "\f140"; }
+
+.icon-refresh:before {
+  font-family: FontAwesome;
+  content: "\f021"; }
 
 html, body {
   margin: 0 auto;
   height: 100%;
   font: 300 13px/20px "Open Sans", Helvetica, Arial, Sans-serif;
-  max-width: 1041px;
-}
+  max-width: 1041px; }
 
 .sidebar {
   grid-area: sidebar;
   background: white;
-  color: black;
-}
-
-grid-
-.sidebar-button {
-  background-color: #f8a230;
-  color: #fff;
-  font-family: "oswald",arial,sans-serif;
-  font-size: 15px;
-  padding: 0.5em 1em 0.5em 1em;
-  text-transform: uppercase;
-  cursor: pointer;
-  display: inline-block;
-  line-height: normal;
-  text-align: center;
-  vertical-align: baseline;
-  white-space: nowrap;
-  border: none;
-  width: auto;
-}
-
-.sidebar h3 {
-  color: #000;
-  margin: 5px 0 15px;
-  text-transform: uppercase;
-  font-size: 16px;
-  font-weight: 300;
-  line-height: 1.4em !important;
-}
-
-.sidebar ul {
-  border-top: 3px dashed #f8a230;
-  margin-bottom: 40px;
-  padding: 20px 0;
-}
-
-.sidebar li {
-  color: #545454 !important;
-  display: block !important;
-  line-height: 1.1em;
-  margin: 10px 0;
-  padding: 0 0 10px;
-  border-bottom: 1px solid #eee;
-  font-size: 15px;
-}
-
-.sidebar li::after {
-  content: "\f055";
-  font-family: FontAwesome;
-  float: right;
-}
+  color: black; }
+  .sidebar-button {
+    background-color: #f8a230;
+    color: #fff;
+    font-family: "oswald",arial,sans-serif;
+    font-size: 15px;
+    padding: 0.5em 1em 0.5em 1em;
+    text-transform: uppercase;
+    cursor: pointer;
+    display: inline-block;
+    line-height: normal;
+    text-align: center;
+    vertical-align: baseline;
+    white-space: nowrap;
+    border: none;
+    width: auto; }
+  .sidebar-see {
+    font-size: 13px;
+    text-decoration: none;
+    color: #f8a230; }
+  .sidebar h3 {
+    color: #000;
+    margin: 5px 0 15px;
+    text-transform: uppercase;
+    font-size: 16px;
+    font-weight: 300;
+    line-height: 1.4em !important; }
+  .sidebar ul {
+    border-top: 3px dashed #f8a230;
+    margin-bottom: 40px;
+    padding: 20px 0; }
+  .sidebar li {
+    color: #545454 !important;
+    display: block !important;
+    line-height: 1.1em;
+    margin: 10px 0;
+    padding: 0 0 10px;
+    border-bottom: 1px solid #eee;
+    font-size: 15px; }
+  .sidebar li::after {
+    content: "\f055";
+    font-family: FontAwesome;
+    float: right; }
 
 .content {
   grid-area: content;
   background: white;
-  margin-left: 20px;
-}
-
-.content-header {
-  position: relative;
-}
-
-.content h3 {
-  color: #000;
-  margin: 5px 0 15px;
-  text-transform: uppercase;
-  font-size: 16px;
-  font-weight: 300;
-  line-height: 1.4em !important;
-  color: #f8a230;
-  font-family: 'oswald',arial,sans-serif;
-  font-weight: normal;
-  margin: 0;
-  margin-top: 4px;
-}
-
-.content-save-button {
-  background-color: #f8a230 !important;
-  width: 200px;
-  font-family: "oswald",arial,sans-serif;
-  font-size: 100%;
-  text-transform: uppercase;
-  text-decoration: none;
-  background-color: #f8a230;
-  color: #fff;
-  font-family: "oswald",arial,sans-serif;
-  font-size: 15px;
-  padding: 0.5em 1em 0.5em 1em;
-  text-transform: uppercase;
-  cursor: pointer;
-  display: inline-block;
-  line-height: normal;
-  text-align: center;
-  vertical-align: baseline;
-  white-space: nowrap;
-  border: none;
-  width: 100px;
-}
-
-.content-save-button::before {
-  content: "\f004";
-  font-family: FontAwesome;
-}
-
-.content-rating {
-  top: 12px;
-  position: relative;
-  border-top: 3px dashed #f8a230;
-  clear: both;
-}
-
-.content-title-instructions {
-  color: #000;
-  margin: 5px 0 15px;
-  text-transform: uppercase;
-  font-size: 18px;
-  font-weight: 300;
-  line-height: 1.4em !important;
-}
-
-.content-instructions-list li {
-  display: block !important;
-  margin-bottom: 10px;
-  list-style-type: decimal !important;
-  color: #545454 !important;
-}
-
-.content-noslimstat {
-  background-color: #000000 !important;
-  width: 200px;
-  font-family: "oswald",arial,sans-serif;
-  font-size: 100%;
-  text-transform: uppercase;
-  text-decoration: none;
-  color: #fff;
-  font-family: "oswald",arial,sans-serif;
-  font-size: 15px;
-  padding: 0.5em 1em 0.5em 1em;
-  text-transform: uppercase;
-  cursor: pointer;
-  display: inline-block;
-  line-height: normal;
-  text-align: center;
-  vertical-align: baseline;
-  white-space: nowrap;
-  border: none;
-  width: 100px;
-}
-
-.content-title {
-  float: left;
-}
-
-.content-pf {
-  float: right;
-}
+  margin-left: 20px; }
+  .content-header {
+    position: relative; }
+  .content h3 {
+    color: #000;
+    margin: 5px 0 15px;
+    text-transform: uppercase;
+    font-size: 16px;
+    font-weight: 300;
+    line-height: 1.4em !important;
+    color: #f8a230;
+    font-family: 'oswald',arial,sans-serif;
+    font-weight: normal;
+    margin: 0;
+    margin-top: 4px; }
+  .content-gray-button {
+    background-color: #cccccc !important;
+    width: 200px;
+    font-family: "oswald",arial,sans-serif;
+    font-size: 100%;
+    text-transform: uppercase;
+    text-decoration: none;
+    border-radius: 4px;
+    color: #fff;
+    font-family: "oswald",arial,sans-serif;
+    font-size: 15px;
+    padding: 0.5em 1em 0.5em 1em;
+    text-transform: uppercase;
+    cursor: pointer;
+    display: inline-block;
+    line-height: normal;
+    text-align: center;
+    vertical-align: baseline;
+    white-space: nowrap;
+    border: none;
+    width: 80px; }
+  .content-save-button {
+    background-color: #f8a230 !important;
+    width: 200px;
+    font-family: "oswald",arial,sans-serif;
+    font-size: 100%;
+    text-transform: uppercase;
+    text-decoration: none;
+    background-color: #f8a230;
+    color: #fff;
+    font-family: "oswald",arial,sans-serif;
+    font-size: 15px;
+    padding: 0.5em 1em 0.5em 1em;
+    text-transform: uppercase;
+    cursor: pointer;
+    display: inline-block;
+    line-height: normal;
+    text-align: center;
+    vertical-align: baseline;
+    white-space: nowrap;
+    border: none;
+    width: 100px; }
+  .content-save-button::before {
+    content: "\f004";
+    font-family: FontAwesome; }
+  .content-rating {
+    top: 12px;
+    position: relative;
+    border-top: 3px dashed #f8a230;
+    clear: both; }
+  .content-instructions {
+    top: 12px;
+    position: relative;
+    border-top: 3px dashed #f8a230;
+    clear: both; }
+  .content-info {
+    list-style-type: none; }
+  .content-info li {
+    display: inline-block;
+    list-style: none outside none;
+    text-align: left;
+    width: 100px; }
+  .content-info li .content-info-item li {
+    display: block;
+    font-size: 10px; }
+  .content-info-icon {
+    position: relative;
+    top: 30px;
+    right: 30px;
+    font-size: 30px;
+    color: #cccccc; }
+  .content-title-instructions {
+    color: #000;
+    margin: 5px 0 15px;
+    text-transform: uppercase;
+    font-size: 18px;
+    font-weight: 300;
+    line-height: 1.4em !important; }
+  .content-instructions-list li {
+    display: block !important;
+    margin-bottom: 10px;
+    list-style-type: decimal !important;
+    color: #545454 !important; }
+  .content-noslimstat {
+    background-color: #000000 !important;
+    width: 200px;
+    font-family: "oswald",arial,sans-serif;
+    font-size: 100%;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: #fff;
+    font-family: "oswald",arial,sans-serif;
+    font-size: 15px;
+    padding: 0.5em 1em 0.5em 1em;
+    text-transform: uppercase;
+    cursor: pointer;
+    display: inline-block;
+    line-height: normal;
+    text-align: center;
+    vertical-align: baseline;
+    white-space: nowrap;
+    border: none;
+    width: 100px; }
+  .content-title {
+    float: left; }
+  .content-pf {
+    float: right; }
 
 .header {
   grid-area: header;
   background: grey;
   background: url(http://keukentafel.nl/wp-content/uploads/2017/06/spareribs.jpg);
-  height: 200px;
-}
+  height: 200px; }
 
 .footer {
   grid-area: footer;
-  background: grey;
-}
+  background: grey; }
 
 .navigation {
   grid-area: navigation;
   background: white;
-  height: 70px;
-}
-
-.navigation-top {
-  width: 100%;
-  margin: 0 auto;
-  height: 67.6px;
-}
-
-.navigation-logo {
-  position: relative;
-  z-index: 1;
-  left: -50px;
-  top: -60px;
-}
-
-.navigation ul {
-  list-style-type: none;
-}
-
-.navigation li {
-  float: left;
-  font-size: 10px;
-  font-weight: bold;
-  text-transform: uppercase;
-}
-
-.navigation li a {
-  display: block;
-  color: #6a6a6a;
-  text-align: center;
-  padding: 5px 16px;
-  text-decoration: none;
-}
-
-.navigation li a:hover {
-  color: #BF9763;
-}
-
-.navigation-button {
-  background-color: #f8a230;
-  color: #fff;
-  font-family: "oswald",arial,sans-serif;
-  font-size: 100%;
-  padding: 0.5em 1em 0.5em 1em;
-  text-transform: uppercase;
-  cursor: pointer;
-  display: inline-block;
-  line-height: normal;
-  text-align: center;
-  vertical-align: baseline;
-  white-space: nowrap;
-  border: none;
-  width: 200px;
-}
+  height: 70px; }
+  .navigation-top {
+    width: 100%;
+    margin: 0 auto;
+    height: 67.6px; }
+  .navigation-logo {
+    position: relative;
+    z-index: 1;
+    left: -50px;
+    top: -60px; }
+  .navigation ul {
+    list-style-type: none; }
+  .navigation li {
+    float: left;
+    font-size: 10px;
+    font-weight: bold;
+    text-transform: uppercase; }
+  .navigation li a {
+    display: block;
+    color: #6a6a6a;
+    text-align: center;
+    padding: 5px 16px;
+    text-decoration: none; }
+  .navigation li a:hover {
+    color: #BF9763; }
+  .navigation-button {
+    background-color: #f8a230;
+    color: #fff;
+    font-family: "oswald",arial,sans-serif;
+    font-size: 100%;
+    padding: 0.5em 1em 0.5em 1em;
+    text-transform: uppercase;
+    cursor: pointer;
+    display: inline-block;
+    line-height: normal;
+    text-align: center;
+    vertical-align: baseline;
+    white-space: nowrap;
+    border: none;
+    width: 200px; }
 
 .topheader {
   grid-area: topheader;
   background: #ebebeb;
-  height: 42.8px;
-}
-
-.topheader-top {
-  max-width: 1041px;
-  width: 100%;
-  margin: 0 auto;
-}
-
-.topheader-lr {
-  margin-bottom: 0;
-  color: black;
-  padding: .8em 0 .4em;
-  text-transform: uppercase;
-  list-style: none;
-  font-size: 12px;
-  text-decoration: none;
-  vertical-align: baseline;
-  top: 10px;
-  float: right;
-}
+  height: 42.8px; }
+  .topheader-top {
+    max-width: 1041px;
+    width: 100%;
+    margin: 0 auto; }
+  .topheader-lr {
+    margin-bottom: 0;
+    color: black;
+    padding: .8em 0 .4em;
+    text-transform: uppercase;
+    list-style: none;
+    font-size: 12px;
+    text-decoration: none;
+    vertical-align: baseline;
+    top: 10px;
+    float: right; }
 
 .wrapper {
   top: 0;
   display: grid;
   grid-template-columns: 3fr 3fr 4fr;
-  grid-template-areas: "topheader  topheader  topheader" "navigation  navigation  navigation" "header  header  header" "sidebar content content" "footer  footer  footer";
-}
+  grid-template-areas: "topheader  topheader  topheader" "navigation  navigation  navigation" "header  header  header" "sidebar content content" "footer  footer  footer"; }
 
 .box {
-  font-size: 150%;
-}
+  font-size: 150%; }
 
 .header, .footer {
-  background-color: #999;
-}
+  background-color: #999; }
 
 .topleft {
   position: absolute;
   top: 0;
-  left: 0;
-}
+  left: 0; }
 
 .topright {
   position: absolute;
   top: 0;
-  right: 0;
-}
+  right: 0; }
 
 .bottomleft {
   position: absolute;
   bottom: 0;
-  left: 0;
-}
+  left: 0; }
 
 .bottomright {
   position: absolute;
   bottom: 0;
-  right: 0;
-}
+  right: 0; }
+
+/*# sourceMappingURL=style.css.map */
