@@ -38,293 +38,295 @@ html, body {
     font: 300 13px/20px "Open Sans", Helvetica, Arial, Sans-serif;
     max-width: 1041px;
 }
-
-.sidebar {
-    grid-area: sidebar;
-    background: white;
-    color: black;  
-    &-button {
-        background-color: #f8a230;
-        color: #fff;
-        font-family: "oswald",arial,sans-serif;
-        font-size: 15px;
-        padding: 0.5em 1em 0.5em 1em;
-        text-transform: uppercase;
-        cursor: pointer;
-        display: inline-block;
-        line-height: normal;
-        text-align: center;
-        vertical-align: baseline;
-        white-space: nowrap;
-        border: none;
-        width: auto;
-    }
-    &-see {
-        font-size: 13px;
-        text-decoration: none;
-        color: #f8a230;
-    }
-    h3 {
-        color: #000;
-        margin: 5px 0 15px;
-        text-transform: uppercase;
-        font-size: 16px;
-        font-weight: 300;
-        line-height: 1.4em !important;
-    }
-    ul {
-        border-top: 3px dashed #f8a230;
-        margin-bottom: 40px;
-        padding: 20px 0;
-    }
-    li {
-        color: #545454 !important;
-        display: block !important;
-        line-height: 1.1em;
-        margin: 10px 0;
-        padding: 0 0 10px;
-        border-bottom: 1px solid #eee;
-        font-size: 15px;
-    }
-    li::after {
-        content: "\f055";
-        font-family: FontAwesome;
-        float: right;
-    }
-}
-
-.content {
-    grid-area: content;
-    background: white;
-    margin-left: 20px;
-    &-header {
-        position: relative;
-    }
-    h3 {
-        color: #000;
-        margin: 5px 0 15px;
-        text-transform: uppercase;
-        font-size: 16px;
-        font-weight: 300;
-        line-height: 1.4em !important;
-        color: #f8a230;
-        font-family: 'oswald',arial,sans-serif;
-        font-weight: normal;
-        margin: 0;
-        margin-top: 4px;
-    }
-    &-gray-button {
-        background-color: #cccccc !important;
-        width: 200px;
-        font-family: "oswald",arial,sans-serif;
-        font-size: 100%;
-        text-transform: uppercase;
-        text-decoration: none;
-        border-radius: 4px;
-        color: #fff;
-        font-family: "oswald",arial,sans-serif;
-        font-size: 15px;
-        padding: 0.5em 1em 0.5em 1em;
-        text-transform: uppercase;
-        cursor: pointer;
-        display: inline-block;
-        line-height: normal;
-        text-align: center;
-        vertical-align: baseline;
-        white-space: nowrap;
-        border: none;
-        width: 80px;
-    }
-    &-save-button {
-        background-color: #f8a230 !important;
-        width: 200px;
-        font-family: "oswald",arial,sans-serif;
-        font-size: 100%;
-        text-transform: uppercase;
-        text-decoration: none;
-
-        background-color: #f8a230;
-        color: #fff;
-        font-family: "oswald",arial,sans-serif;
-        font-size: 15px;
-        padding: 0.5em 1em 0.5em 1em;
-        text-transform: uppercase;
-        cursor: pointer;
-        display: inline-block;
-        line-height: normal;
-        text-align: center;
-        vertical-align: baseline;
-        white-space: nowrap;
-        border: none;
-        width: 100px;
-    }
-    &-save-button::before {
-        content: "\f004";
-        font-family: FontAwesome;
-    }
-    &-rating {
-        top: 12px;
-        position: relative;
-        border-top: 3px dashed #f8a230;
-        clear: both;
-    }
-    &-instructions {
-        top: 12px;
-        position: relative;
-        border-top: 3px dashed #f8a230;
-        clear: both;
-    }
-    &-info {
-        list-style-type: none;
-    }
-    
-    &-info li {
-        display: inline-block;
-        list-style: none outside none;
-        text-align: left;
-        width: 100px;
-    }
-    &-info li &-info-item li {
-        display: block;
-        font-size: 10px;
-    }
-    &-info-icon {
-        position: relative;
-        top: 30px;
-        right: 30px;
-        font-size: 30px;
-        color: #cccccc;
-    }
-    &-title-instructions {
-        color: #000;
-        margin: 5px 0 15px;
-        text-transform: uppercase;
-        font-size: 18px;
-        font-weight: 300;
-        line-height: 1.4em !important;
-    }
-    &-instructions-list li{
-            display: block !important;
-            margin-bottom: 10px;
-            list-style-type: decimal !important;
+.box {
+    font-size: 150%;
+    &__sidebar {
+        grid-area: sidebar;
+        background: white;
+        color: black;  
+        &-button {
+            background-color: #f8a230;
+            color: #fff;
+            font-family: "oswald",arial,sans-serif;
+            font-size: 15px;
+            padding: 0.5em 1em 0.5em 1em;
+            text-transform: uppercase;
+            cursor: pointer;
+            display: inline-block;
+            line-height: normal;
+            text-align: center;
+            vertical-align: baseline;
+            white-space: nowrap;
+            border: none;
+            width: auto;
+        }
+        &-see {
+            font-size: 13px;
+            text-decoration: none;
+            color: #f8a230;
+        }
+        h3 {
+            color: #000;
+            margin: 5px 0 15px;
+            text-transform: uppercase;
+            font-size: 16px;
+            font-weight: 300;
+            line-height: 1.4em !important;
+        }
+        ul {
+            border-top: 3px dashed #f8a230;
+            margin-bottom: 40px;
+            padding: 20px 0;
+        }
+        li {
             color: #545454 !important;
+            display: block !important;
+            line-height: 1.1em;
+            margin: 10px 0;
+            padding: 0 0 10px;
+            border-bottom: 1px solid #eee;
+            font-size: 15px;
+        }
+        li::after {
+            content: "\f055";
+            font-family: FontAwesome;
+            float: right;
+        }
     }
-    &-noslimstat {
-        background-color: #000000 !important;
-        width: 200px;
-        font-family: "oswald",arial,sans-serif;
-        font-size: 100%;
-        text-transform: uppercase;
-        text-decoration: none;
-        color: #fff;
-        font-family: "oswald",arial,sans-serif;
-        font-size: 15px;
-        padding: 0.5em 1em 0.5em 1em;
-        text-transform: uppercase;
-        cursor: pointer;
-        display: inline-block;
-        line-height: normal;
-        text-align: center;
-        vertical-align: baseline;
-        white-space: nowrap;
-        border: none;
-        width: 100px;
-    }
-    &-title {
-        float: left;
-    }
-    &-pf {
-        float: right;
-    }
-}
 
-.header {
-    grid-area: header;
-    background: grey;
-    background: url(http://keukentafel.nl/wp-content/uploads/2017/06/spareribs.jpg);
-    height: 200px;
-}
+    &__content {
+        grid-area: content;
+        background: white;
+        margin-left: 20px;
+        
+        &-header {
+            position: relative;
+        }
+        h3 {
+            color: #000;
+            margin: 5px 0 15px;
+            text-transform: uppercase;
+            font-size: 16px;
+            font-weight: 300;
+            line-height: 1.4em !important;
+            color: #f8a230;
+            font-family: 'oswald',arial,sans-serif;
+            font-weight: normal;
+            margin: 0;
+            margin-top: 4px;
+        }
+        &-gray-button {
+            background-color: #cccccc !important;
+            width: 200px;
+            font-family: "oswald",arial,sans-serif;
+            font-size: 100%;
+            text-transform: uppercase;
+            text-decoration: none;
+            border-radius: 4px;
+            color: #fff;
+            font-family: "oswald",arial,sans-serif;
+            font-size: 15px;
+            padding: 0.5em 1em 0.5em 1em;
+            text-transform: uppercase;
+            cursor: pointer;
+            display: inline-block;
+            line-height: normal;
+            text-align: center;
+            vertical-align: baseline;
+            white-space: nowrap;
+            border: none;
+            width: 80px;
+        }
+        &-save-button {
+            background-color: #f8a230 !important;
+            width: 200px;
+            font-family: "oswald",arial,sans-serif;
+            font-size: 100%;
+            text-transform: uppercase;
+            text-decoration: none;
 
-.footer {
-    grid-area: footer;
-    background: grey;
-}
-.navigation {
-    grid-area: navigation;
-    background: white;
-    height: 70px;
-    &-top {
-        width: 100%;
-        margin: 0 auto;
-        height: 67.6px;
+            background-color: #f8a230;
+            color: #fff;
+            font-family: "oswald",arial,sans-serif;
+            font-size: 15px;
+            padding: 0.5em 1em 0.5em 1em;
+            text-transform: uppercase;
+            cursor: pointer;
+            display: inline-block;
+            line-height: normal;
+            text-align: center;
+            vertical-align: baseline;
+            white-space: nowrap;
+            border: none;
+            width: 100px;
+        }
+        &-save-button::before {
+            content: "\f004";
+            font-family: FontAwesome;
+        }
+        &-rating {
+            top: 12px;
+            position: relative;
+            border-top: 3px dashed #f8a230;
+            clear: both;
+        }
+        &-instructions {
+            top: 12px;
+            position: relative;
+            border-top: 3px dashed #f8a230;
+            clear: both;
+        }
+        &-info {
+            list-style-type: none;
+        }
+        
+        &-info li {
+            display: inline-block;
+            list-style: none outside none;
+            text-align: left;
+            width: 100px;
+        }
+        &-info li &-info-item li {
+            display: block;
+            font-size: 10px;
+        }
+        &-info-icon {
+            position: relative;
+            top: 30px;
+            right: 30px;
+            font-size: 30px;
+            color: #cccccc;
+        }
+        &-title-instructions {
+            color: #000;
+            margin: 5px 0 15px;
+            text-transform: uppercase;
+            font-size: 18px;
+            font-weight: 300;
+            line-height: 1.4em !important;
+        }
+        &-instructions-list li{
+                display: block !important;
+                margin-bottom: 10px;
+                list-style-type: decimal !important;
+                color: #545454 !important;
+        }
+        &-noslimstat {
+            background-color: #000000 !important;
+            width: 200px;
+            font-family: "oswald",arial,sans-serif;
+            font-size: 100%;
+            text-transform: uppercase;
+            text-decoration: none;
+            color: #fff;
+            font-family: "oswald",arial,sans-serif;
+            font-size: 15px;
+            padding: 0.5em 1em 0.5em 1em;
+            text-transform: uppercase;
+            cursor: pointer;
+            display: inline-block;
+            line-height: normal;
+            text-align: center;
+            vertical-align: baseline;
+            white-space: nowrap;
+            border: none;
+            width: 100px;
+        }
+        &-title {
+            float: left;
+        }
+        &-pf {
+            float: right;
+        }
     }
-    &-logo {
-        position: relative;
-        z-index: 1;
-        left: -50px;
-        top: -60px;
-    }
-    ul {
-        list-style-type: none;
-    }
-    
-    li {
-        float: left;
-        font-size: 10px;
-        font-weight: bold;
-        text-transform: uppercase;
-    }
-    
-    li a {
-        display: block;
-        color: #6a6a6a;
-        text-align: center;
-        padding: 5px 16px;
-        text-decoration: none;
-    }
-    li a:hover {
-        color: #BF9763;
-    }
-    &-button {
-        background-color: #f8a230;
-        color: #fff;
-        font-family: "oswald",arial,sans-serif;
-        font-size: 100%;
-        padding: 0.5em 1em 0.5em 1em;
-        text-transform: uppercase;
-        cursor: pointer;
-        display: inline-block;
-        line-height: normal;
-        text-align: center;
-        vertical-align: baseline;
-        white-space: nowrap;
-        border: none;
-        width: 200px;
-    }
-}
-.topheader {
-    grid-area: topheader;
-    background: #ebebeb;
-    height: 42.8px;
-    &-top {
-        max-width: $maxwith;
-        width: 100%;
-        margin: 0 auto;
-    }
-    &-lr {
-        margin-bottom: 0;
-        color: black;
-        padding: .8em 0 .4em;
-        text-transform: uppercase;
-        list-style: none;
-        font-size: 12px;
-        text-decoration: none;
-        vertical-align: baseline;
-        top: 10px;
-        float: right;
-    }
-}
 
+    &__header {
+        grid-area: header;
+        background: grey;
+        background: url(http://keukentafel.nl/wp-content/uploads/2017/06/spareribs.jpg);
+        height: 200px;
+    }
+
+    &__footer {
+        grid-area: footer;
+        background: grey;
+    }
+    &__navigation {
+        grid-area: navigation;
+        background: white;
+        height: 70px;
+        &-top {
+            width: 100%;
+            margin: 0 auto;
+            height: 67.6px;
+        }
+        &-logo {
+            position: relative;
+            z-index: 1;
+            left: -50px;
+            top: -60px;
+        }
+        ul {
+            list-style-type: none;
+        }
+        
+        li {
+            float: left;
+            font-size: 10px;
+            font-weight: bold;
+            text-transform: uppercase;
+        }
+        
+        li a {
+            display: block;
+            color: #6a6a6a;
+            text-align: center;
+            padding: 5px 16px;
+            text-decoration: none;
+        }
+        li a:hover {
+            color: #BF9763;
+        }
+        &-button {
+            background-color: #f8a230;
+            color: #fff;
+            font-family: "oswald",arial,sans-serif;
+            font-size: 100%;
+            padding: 0.5em 1em 0.5em 1em;
+            text-transform: uppercase;
+            cursor: pointer;
+            display: inline-block;
+            line-height: normal;
+            text-align: center;
+            vertical-align: baseline;
+            white-space: nowrap;
+            border: none;
+            width: 200px;
+        }
+    }
+    &__topheader {
+        grid-area: topheader;
+        background: #ebebeb;
+        height: 42.8px;
+        &-top {
+            max-width: $maxwith;
+            width: 100%;
+            margin: 0 auto;
+        }
+        &-lr {
+            margin-bottom: 0;
+            color: black;
+            padding: .8em 0 .4em;
+            text-transform: uppercase;
+            list-style: none;
+            font-size: 12px;
+            text-decoration: none;
+            vertical-align: baseline;
+            top: 10px;
+            float: right;
+        }
+    }
+}
 .wrapper {
     top: 0;
     display: grid;
@@ -336,35 +338,6 @@ html, body {
     "sidebar content content"
     "footer  footer  footer";
 }
-
-.box {
-    font-size: 150%;
-
-}
 .header, .footer {
     background-color: #999;
-}
-
-.topleft {
-    position: absolute;
-    top: 0;
-    left: 0;
-}
-
-.topright {
-    position: absolute;
-    top: 0;
-    right: 0;
-}
-
-.bottomleft {
-    position: absolute;
-    bottom: 0;
-    left: 0;
-}
-
-.bottomright {
-    position: absolute;
-    bottom: 0;
-    right: 0;
 }
